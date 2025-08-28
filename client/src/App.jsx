@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import JarvisConsole from "./components/JarvisConsole.jsx";
 import VoiceButton from "./components/VoiceButton.jsx";
 import ArcReactor from "./components/ArcReactor.jsx";

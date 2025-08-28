@@ -7,7 +7,7 @@ import {
 } from "../services/audioStreamer.js";
 
 /**
- * POST /api/ask-stream
+ * POST /api/ask/stream
  * Body: { prompt: string }
  * Returns: audio/mpeg stream (multiple MP3 chunks)
  */

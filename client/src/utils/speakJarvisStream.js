@@ -13,7 +13,7 @@ export async function speakJarvisStream(prompt) {
     return;
   }
 
-  // accumulate progressive chunks into a Blob (simpler than MediaSource)
+  // getReader() gives you a reader to read chunks progressively.
   const reader = res.body.getReader();
   const chunks = [];
   while (true) {
