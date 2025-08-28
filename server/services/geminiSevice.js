@@ -17,7 +17,7 @@ function getMode(prompt) {
     : "chat";
 }
 
-const genAI = new GoogleGenerativeAI("AIzaSyBOPhC3hGtVgQm7o5O_NoFJcp35ZLpg_Ck");
+const genAI = new GoogleGenerativeAI("process.env.GEMINI_API_KEY");
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 export async function* askGeminiStream(prompt) {
