@@ -6,7 +6,7 @@ export const getJarvisResponse = async (req, res) => {
   try {
     const { prompt, mode, voice, rate, pitch } = req.body || {};
     
-    if (!prompt) {
+    if (!prompt || !prompt.trim()) {
       return res.status(400).json({ error: "message is required" });
     }
     
